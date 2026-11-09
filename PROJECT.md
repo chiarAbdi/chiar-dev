@@ -194,3 +194,10 @@ New route-specific client content lives in components/pages and components/learn
 academy-learning-progress-v1 stores unique guided-math completion IDs after a quiz is finished. The dashboard filters them against real course IDs and combines them with validated/deduplicated legacy academy-ict-siz-v1 completion indices. No historical completion is fabricated or backfilled. Quiz completion is not a mastery/certification claim. Notes and unfinished quiz answers remain transient.
 
 The confirmed contact is chiar.abdi@powercoders.org and https://github.com/chiarAbdi. mailto actions open a local email client and never send automatically. No server, account, analytics or new runtime dependency was added. Public GitHub publication was explicitly authorized for this task, including main and testing; deployment was not requested. Private reference notes, caches and model downloads remain ignored.
+
+
+## Verified GitHub publication — 2026-11-09
+
+The user explicitly requested a public chiar-dev repository, a main push and a testing branch. Created https://github.com/chiarAbdi/chiar-dev and pushed verified application commit 4dfe206 to both branches. GitHub reports PUBLIC visibility and main as the default. Both local branches track their remote counterparts; testing starts from the same application code.
+
+README, source, finished media, portrait, screenshot and documentation are included. Private CV source notes, local credentials/tooling, neural models and caches, and duplicate references are excluded. No deployment or automatic remote workflow was configured. The current session authorization covers this initial publication, not future automatic pushes.

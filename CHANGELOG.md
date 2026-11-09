@@ -4,6 +4,16 @@ Only verified local development is recorded here. Repository version is 0.1.0; n
 
 ## Unreleased
 
+### 2026-11-09 — Initial GitHub publication
+
+- Created the user-requested public repository https://github.com/chiarAbdi/chiar-dev using the existing authenticated account.
+- Pushed application commit 4dfe206 to main and testing, set branch upstreams, and verified that main is the default branch. testing starts from the same checked application version, ready for future experiments.
+- Included source, finished media, optimized portrait, dashboard screenshot, README and project documentation. Excluded local model/runtime caches, private CV notes and duplicate reference files. No credentials were added; the source/asset secret-pattern check passed.
+- Did not deploy the application or configure automatic deployment. Future remote updates still require explicit authorization.
+
+Verification: both branch pushes succeeded, the repository reports PUBLIC visibility and main as its default branch, and the working tree was clean before this publication record. Lint, TypeScript, build, development browser regression and production smoke checks passed for the published application.
+
+
 ### 2026-11-09 — Site organization, shared languages and learning dashboard
 
 - Reorganized Home into a concise introduction; implemented separate searchable Projects, LearnBlog discovery, learning-dashboard and Contact pages. Preserved the approved About design and all lesson URLs. Planned software remains clearly labeled.

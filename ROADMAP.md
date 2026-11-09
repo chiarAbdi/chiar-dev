@@ -45,7 +45,7 @@ These describe current product areas, not an assertion that someone is actively 
 6. Review the new page organization and course dashboard. Projects and Contact are implemented; the shared EN/DE behavior and progress flow have browser regression coverage.
 
 - [x] Replace the starter README with current setup, architecture, routes, progress/language behavior, media generation and branch workflow.
-- [ ] Complete the user-authorized initial publication to public chiarAbdi/chiar-dev with main and testing branches.
+- [x] Published the user-authorized public repository https://github.com/chiarAbdi/chiar-dev. main is the default branch; testing starts from the same verified code. Initial application commit: 4dfe206. No deployment configured.
 
 ## Longer-term plans, not implemented
 
