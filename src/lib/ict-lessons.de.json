@@ -1,0 +1,488 @@
+[
+  {
+    "title": "Was ist ICT?",
+    "explain": "ICT steht für Informations- und Kommunikationstechnologie. Ein Computer nimmt Eingaben entgegen, verarbeitet Anweisungen mit der CPU, hält aktuelle Daten im RAM und speichert Dateien dauerhaft auf einem Datenträger.",
+    "example": "Praxisbeispiel: ICT steht für Informations- und Kommunikationstechnologie. Ein Computer nimmt Eingaben entgegen, verarbeitet Anweisungen mit der CPU, hält aktuelle Daten im RAM und speichert Dateien dauerhaft auf einem Datenträger.",
+    "lab": "Öffne den Task-Manager und beobachte CPU, Arbeitsspeicher, Datenträger und Netzwerk beim Öffnen eines Browsers.",
+    "question": "Welche Komponente hält die Arbeitsdaten laufender Programme?",
+    "correct": "RAM",
+    "wrong": "SSD"
+  },
+  {
+    "title": "Bits, Bytes und Binärzahlen",
+    "explain": "Ein Bit ist 0 oder 1; acht Bits bilden ein Byte. Das Binärsystem verwendet Zweierpotenzen. Zum Beispiel gilt 1010₂ = 8 + 2 = 10₁₀.",
+    "example": "Praxisbeispiel: Ein Bit ist 0 oder 1; acht Bits bilden ein Byte. Das Binärsystem verwendet Zweierpotenzen. Zum Beispiel gilt 1010₂ = 8 + 2 = 10₁₀.",
+    "lab": "Wandle 1101₂ in eine Dezimalzahl um. Kontrolle: 13.",
+    "question": "Wie viele Bits enthält ein Byte?",
+    "correct": "8",
+    "wrong": "16"
+  },
+  {
+    "title": "Hardware und Systemstart",
+    "explain": "Die UEFI-Firmware initialisiert die Hardware und lädt den Bootloader des Betriebssystems. RAM ist flüchtig; eine SSD behält gespeicherte Dateien nach dem Herunterfahren.",
+    "example": "Praxisbeispiel: Die UEFI-Firmware initialisiert die Hardware und lädt den Bootloader des Betriebssystems. RAM ist flüchtig; eine SSD behält gespeicherte Dateien nach dem Herunterfahren.",
+    "lab": "Öffne die Systeminformationen und notiere CPU, RAM, Firmware-Modus und Datenträgerkapazität.",
+    "question": "Was startet vor dem Betriebssystem?",
+    "correct": "UEFI-Firmware",
+    "wrong": "Webbrowser"
+  },
+  {
+    "title": "Dateien und Befehlszeile",
+    "explain": "Eine Datei enthält benannte Daten; Ordner organisieren Dateien. Ein absoluter Pfad beginnt an einer Dateisystemwurzel. PowerShell-Befehle helfen beim Untersuchen und Verwalten eines Systems.",
+    "example": "Praxisbeispiel: Eine Datei enthält benannte Daten; Ordner organisieren Dateien. Ein absoluter Pfad beginnt an einer Dateisystemwurzel. PowerShell-Befehle helfen beim Untersuchen und Verwalten eines Systems.",
+    "lab": "Führe pwd, Get-ChildItem, Get-Process und Get-Help Get-Process aus.",
+    "question": "Welcher Befehl zeigt laufende Prozesse?",
+    "correct": "Get-Process",
+    "wrong": "Get-Service"
+  },
+  {
+    "title": "Virtuelle Maschinen und sichere Labs",
+    "explain": "Eine virtuelle Maschine ist ein isoliertes Gastbetriebssystem auf einem Hypervisor. Snapshots erleichtern das Zurücksetzen, ersetzen aber keine Sicherung.",
+    "example": "Praxisbeispiel: Eine virtuelle Maschine ist ein isoliertes Gastbetriebssystem auf einem Hypervisor. Snapshots erleichtern das Zurücksetzen, ersetzen aber keine Sicherung.",
+    "lab": "Erstelle eine Test-VM und einen Snapshot. Installiere eine harmlose Anwendung und stelle den Snapshot wieder her.",
+    "question": "Wobei hilft ein Snapshot?",
+    "correct": "Beim Zurücksetzen",
+    "wrong": "Als dauerhafter Ersatz für Backups"
+  },
+  {
+    "title": "Methodik im IT-Support",
+    "explain": "Beschreibe Symptome und Umfang, sammle Hinweise, bilde eine Hypothese und teste eine Änderung. Prüfe danach das Ergebnis und dokumentiere die Lösung.",
+    "example": "Praxisbeispiel: Beschreibe Symptome und Umfang, sammle Hinweise, bilde eine Hypothese und teste eine Änderung. Prüfe danach das Ergebnis und dokumentiere die Lösung.",
+    "lab": "Schreibe ein fiktives Ticket für einen PC ohne Netzwerkverbindung, einschließlich Symptomen und Tests.",
+    "question": "Was kommt zuerst?",
+    "correct": "Hinweise sammeln",
+    "wrong": "Wahllos neu installieren"
+  },
+  {
+    "title": "Windows installieren und konfigurieren",
+    "explain": "Moderne Windows-Systeme nutzen häufig UEFI und GPT. Prüfe vor der Installation Hardwarekompatibilität, Lizenzen, Sicherungen und Wiederherstellungsmöglichkeiten.",
+    "example": "Praxisbeispiel: Moderne Windows-Systeme nutzen häufig UEFI und GPT. Prüfe vor der Installation Hardwarekompatibilität, Lizenzen, Sicherungen und Wiederherstellungsmöglichkeiten.",
+    "lab": "Untersuche Partitionen in einer VM und übe eine Windows-Installation mit ordnungsgemäß lizenziertem Medium.",
+    "question": "Was muss vor einer Neuinstallation geschehen?",
+    "correct": "Sicherung und Planung",
+    "wrong": "Sofort formatieren"
+  },
+  {
+    "title": "Treiber und Peripheriegeräte",
+    "explain": "Ein Treiber ermöglicht dem Betriebssystem die Kommunikation mit Hardware. Prüfe bei Druckerproblemen Strom, Kabel, Netzwerk, Treiber und Warteschlangen.",
+    "example": "Praxisbeispiel: Ein Treiber ermöglicht dem Betriebssystem die Kommunikation mit Hardware. Prüfe bei Druckerproblemen Strom, Kabel, Netzwerk, Treiber und Warteschlangen.",
+    "lab": "Untersuche den Geräte-Manager und entwirf einen Ablauf zur Drucker-Fehlersuche.",
+    "question": "Was ist ein Gerätetreiber?",
+    "correct": "Software zur Hardwarekommunikation",
+    "wrong": "Ein Passwort"
+  },
+  {
+    "title": "Updates und Patchmanagement",
+    "explain": "Updates beheben Fehler und Sicherheitslücken. Plane Tests, Wartungsfenster, Neustarts und Rückfallmöglichkeiten, um unnötige Unterbrechungen zu vermeiden.",
+    "example": "Praxisbeispiel: Updates beheben Fehler und Sicherheitslücken. Plane Tests, Wartungsfenster, Neustarts und Rückfallmöglichkeiten, um unnötige Unterbrechungen zu vermeiden.",
+    "lab": "Prüfe den Updateverlauf und erstelle eine Patch-Checkliste für zehn Arbeitsplätze.",
+    "question": "Warum eine Rückfallmöglichkeit planen?",
+    "correct": "Zur Erholung von einem fehlerhaften Update",
+    "wrong": "Um alle Updates zu vermeiden"
+  },
+  {
+    "title": "Windows-Dienste und Protokolle",
+    "explain": "Prozesse sind laufende Programme; Dienste stellen Hintergrundfunktionen bereit. Die Ereignisanzeige hilft, Fehler mit Zeitpunkten und betroffenen Komponenten zu verbinden.",
+    "example": "Praxisbeispiel: Prozesse sind laufende Programme; Dienste stellen Hintergrundfunktionen bereit. Die Ereignisanzeige hilft, Fehler mit Zeitpunkten und betroffenen Komponenten zu verbinden.",
+    "lab": "Untersuche Get-Service und die Ereignisanzeige. Notiere eine Ereignis-ID und erkläre ihren Zusammenhang.",
+    "question": "Wo untersucht man Windows-Systemereignisse?",
+    "correct": "In der Ereignisanzeige",
+    "wrong": "Im Papierkorb"
+  },
+  {
+    "title": "Linux-Grundlagen",
+    "explain": "Linux verwendet die Dateisystemwurzel /, Shell-Befehle und Paketverwaltungen. In vielen Distributionen verwaltet systemd die Dienste.",
+    "example": "Praxisbeispiel: Linux verwendet die Dateisystemwurzel /, Shell-Befehle und Paketverwaltungen. In vielen Distributionen verwaltet systemd die Dienste.",
+    "lab": "Führe in einer Linux-VM pwd, ls -la, cat /etc/os-release und systemctl --help aus.",
+    "question": "Was ist das Linux-Wurzelverzeichnis?",
+    "correct": "/",
+    "wrong": "C:\\"
+  },
+  {
+    "title": "Datenträger und Dateisysteme",
+    "explain": "Eine Partition unterteilt Speicherplatz; ein Dateisystem organisiert Daten. NTFS, exFAT und ext4 unterscheiden sich bei Berechtigungen, Journaling und Kompatibilität.",
+    "example": "Praxisbeispiel: Eine Partition unterteilt Speicherplatz; ein Dateisystem organisiert Daten. NTFS, exFAT und ext4 unterscheiden sich bei Berechtigungen, Journaling und Kompatibilität.",
+    "lab": "Vergleiche NTFS und exFAT. Untersuche einen entbehrlichen virtuellen Datenträger, ohne echte Laufwerke zu formatieren.",
+    "question": "Was organisiert Dateien auf einem Volume?",
+    "correct": "Das Dateisystem",
+    "wrong": "Die GPU"
+  },
+  {
+    "title": "Softwareinstallation und Lizenzen",
+    "explain": "Softwareverteilung erfordert geprüfte Quellen, Versionskontrolle, Abhängigkeiten, Kompatibilität, Lizenzen und eine Rückfallmöglichkeit.",
+    "example": "Praxisbeispiel: Softwareverteilung erfordert geprüfte Quellen, Versionskontrolle, Abhängigkeiten, Kompatibilität, Lizenzen und eine Rückfallmöglichkeit.",
+    "lab": "Inventarisiere drei Anwendungen und bereite einen Upgradeplan mit Tests vor.",
+    "question": "Was muss vor der Verteilung geprüft werden?",
+    "correct": "Lizenzierung und Kompatibilität",
+    "wrong": "Das Symbol-Design"
+  },
+  {
+    "title": "Leistung überwachen",
+    "explain": "Miss CPU-, RAM-, Datenträger- und Netzwerkaktivität unter realistischer Last. Achte auf Entwicklungen statt auf einen einzelnen Messwert.",
+    "example": "Praxisbeispiel: Miss CPU-, RAM-, Datenträger- und Netzwerkaktivität unter realistischer Last. Achte auf Entwicklungen statt auf einen einzelnen Messwert.",
+    "lab": "Beobachte den Ressourcenmonitor beim Kopieren einer Datei. Welche Ressource wird ausgelastet?",
+    "question": "Was deutet auf Speicherdruck hin?",
+    "correct": "Wenig freier RAM und Auslagerung",
+    "wrong": "Allein die Bildschirmauflösung"
+  },
+  {
+    "title": "Virtualisierung und Container",
+    "explain": "VMs betreiben Gastbetriebssysteme. Container isolieren Anwendungen und teilen dabei den Kernel des Hosts. Ressourcenbedarf und Sicherheitseigenschaften unterscheiden sich.",
+    "example": "Praxisbeispiel: VMs betreiben Gastbetriebssysteme. Container isolieren Anwendungen und teilen dabei den Kernel des Hosts. Ressourcenbedarf und Sicherheitseigenschaften unterscheiden sich.",
+    "lab": "Vergleiche eine Linux-VM und einen Container bezüglich Startzeit, Isolation und Speicherung.",
+    "question": "Was hat gewöhnlich einen eigenen Gast-Kernel?",
+    "correct": "Eine VM",
+    "wrong": "Ein gewöhnlicher Container"
+  },
+  {
+    "title": "Fernsupport und Kommunikation",
+    "explain": "Hole vor einer Fernsteuerung die Erlaubnis ein. Schütze die Privatsphäre, prüfe die Identität, kommuniziere verständlich und dokumentiere die Schritte.",
+    "example": "Praxisbeispiel: Hole vor einer Fernsteuerung die Erlaubnis ein. Schütze die Privatsphäre, prüfe die Identität, kommuniziere verständlich und dokumentiere die Schritte.",
+    "lab": "Spiele ein Fernsupportgespräch durch und schreibe eine kurze Übergabenotiz.",
+    "question": "Was muss vor einer Fernsteuerung vorliegen?",
+    "correct": "Die Zustimmung der nutzenden Person",
+    "wrong": "Deaktivierte Prüfprotokolle"
+  },
+  {
+    "title": "Benutzer, Gruppen und minimale Rechte",
+    "explain": "Authentifizierung prüft die Identität; Autorisierung bestimmt den Zugriff. Gruppen vereinfachen die Rechtevergabe. Minimale Rechte beschränken Konten auf den nötigen Zugriff.",
+    "example": "Praxisbeispiel: Authentifizierung prüft die Identität; Autorisierung bestimmt den Zugriff. Gruppen vereinfachen die Rechtevergabe. Minimale Rechte beschränken Konten auf den nötigen Zugriff.",
+    "lab": "Erstelle zwei Testbenutzer in einer VM und vergleiche Standard- und Administratorrechte.",
+    "question": "Was bedeutet das Prinzip minimaler Rechte?",
+    "correct": "Nur den erforderlichen Zugriff",
+    "wrong": "Administratorrechte für alle"
+  },
+  {
+    "title": "Passwörter und MFA",
+    "explain": "Verwende eindeutige Passwörter, sichere Passwortmanager und unabhängige MFA-Faktoren. Zwei Passwörter bilden keine zwei unabhängigen Faktorarten.",
+    "example": "Praxisbeispiel: Verwende eindeutige Passwörter, sichere Passwortmanager und unabhängige MFA-Faktoren. Zwei Passwörter bilden keine zwei unabhängigen Faktorarten.",
+    "lab": "Entwirf eine sichere Anmelderichtlinie für ein fiktives Büro.",
+    "question": "Was ergänzt MFA?",
+    "correct": "Einen unabhängigen Authentifizierungsfaktor",
+    "wrong": "Einen zweiten Benutzernamen"
+  },
+  {
+    "title": "NTFS- und Freigabeberechtigungen",
+    "explain": "Eine Netzwerkfreigabe kann sowohl Freigabe- als auch Dateisystemberechtigungen haben. Der effektive Zugriff muss die jeweils geltenden Einschränkungen erfüllen.",
+    "example": "Praxisbeispiel: Eine Netzwerkfreigabe kann sowohl Freigabe- als auch Dateisystemberechtigungen haben. Der effektive Zugriff muss die jeweils geltenden Einschränkungen erfüllen.",
+    "lab": "Erstelle eine Testfreigabe mit Gruppen für Lesen und Ändern und prüfe den Zugriff.",
+    "question": "Welche Berechtigungen gelten beim lokalen NTFS-Zugriff?",
+    "correct": "NTFS-Berechtigungen",
+    "wrong": "DNS-Einträge"
+  },
+  {
+    "title": "Active Directory: Grundlagen",
+    "explain": "AD DS verwaltet Domänenidentitäten und Computerobjekte zentral. Organisationseinheiten strukturieren die Verwaltung; Gruppen steuern den Zugriff.",
+    "example": "Praxisbeispiel: AD DS verwaltet Domänenidentitäten und Computerobjekte zentral. Organisationseinheiten strukturieren die Verwaltung; Gruppen steuern den Zugriff.",
+    "lab": "Skizziere eine kleine Domäne mit Benutzern, Computern, OUs und Sicherheitsgruppen.",
+    "question": "Was verwaltet AD DS?",
+    "correct": "Verzeichnisobjekte",
+    "wrong": "Das WLAN-Signal"
+  },
+  {
+    "title": "Gruppenrichtlinien",
+    "explain": "GPOs wenden zentrale Einstellungen auf Benutzer und Computer an. Geltungsbereich, Vererbung, Sicherheitsfilter und Rangfolge beeinflussen das Ergebnis.",
+    "example": "Praxisbeispiel: GPOs wenden zentrale Einstellungen auf Benutzer und Computer an. Geltungsbereich, Vererbung, Sicherheitsfilter und Rangfolge beeinflussen das Ergebnis.",
+    "lab": "Entwirf eine harmlose Bildschirmsperr-Richtlinie für Testcomputer, einschließlich Rücknahme.",
+    "question": "Was macht ein GPO?",
+    "correct": "Einstellungen zentral anwenden",
+    "wrong": "Backups ersetzen"
+  },
+  {
+    "title": "Vertraulichkeit, Integrität und Verfügbarkeit",
+    "explain": "Vertraulichkeit begrenzt die Offenlegung, Integrität schützt die Richtigkeit und Verfügbarkeit hält Dienste erreichbar. Unterschiedliche Maßnahmen behandeln unterschiedliche Risiken.",
+    "example": "Praxisbeispiel: Vertraulichkeit begrenzt die Offenlegung, Integrität schützt die Richtigkeit und Verfügbarkeit hält Dienste erreichbar. Unterschiedliche Maßnahmen behandeln unterschiedliche Risiken.",
+    "lab": "Ordne Verschlüsselung, Prüfsummen und Redundanz dem CIA-Modell zu.",
+    "question": "Was schützt Integrität?",
+    "correct": "Die Richtigkeit der Daten",
+    "wrong": "Nur die Betriebszeit"
+  },
+  {
+    "title": "Verschlüsselung und Wiederherstellung",
+    "explain": "Verschlüsselung schützt Daten bei geeigneter Schlüsselverwaltung. Der Verlust eines BitLocker-Wiederherstellungsschlüssels kann ein Volume unzugänglich machen.",
+    "example": "Praxisbeispiel: Verschlüsselung schützt Daten bei geeigneter Schlüsselverwaltung. Der Verlust eines BitLocker-Wiederherstellungsschlüssels kann ein Volume unzugänglich machen.",
+    "lab": "Beschreibe, wie Wiederherstellungsschlüssel für Testgeräte aufbewahrt und zugänglich gemacht werden.",
+    "question": "Was wird für die verschlüsselte Wiederherstellung benötigt?",
+    "correct": "Der Wiederherstellungsschlüssel",
+    "wrong": "Ein Druckertreiber"
+  },
+  {
+    "title": "Lebenszyklus von Benutzerkonten",
+    "explain": "Eintritt, Rollenwechsel und Austritt müssen sich in Konten und Zugriffsrechten widerspiegeln. Entziehe unnötigen Zugriff und Sitzungen zeitnah.",
+    "example": "Praxisbeispiel: Eintritt, Rollenwechsel und Austritt müssen sich in Konten und Zugriffsrechten widerspiegeln. Entziehe unnötigen Zugriff und Sitzungen zeitnah.",
+    "lab": "Erstelle Checklisten für Onboarding und Offboarding.",
+    "question": "Was folgt nach einem Austritt?",
+    "correct": "Zugriff entziehen",
+    "wrong": "Alle Zugriffe beibehalten"
+  },
+  {
+    "title": "NAS, RAID und Backups",
+    "explain": "Ein NAS stellt gemeinsamen Speicher über Protokolle wie SMB bereit. RAID verbessert die Ausfallsicherheit in bestimmten Fällen, ersetzt aber keine unabhängigen Backups.",
+    "example": "Praxisbeispiel: Ein NAS stellt gemeinsamen Speicher über Protokolle wie SMB bereit. RAID verbessert die Ausfallsicherheit in bestimmten Fällen, ersetzt aber keine unabhängigen Backups.",
+    "lab": "Zeichne ein NAS mit Benutzergruppen, Snapshots und Offline-Sicherung.",
+    "question": "Ist RAID ein Backup?",
+    "correct": "Nein",
+    "wrong": "Ja"
+  },
+  {
+    "title": "E-Mail und DNS",
+    "explain": "Postfächer, Aliasse und gemeinsame Postfächer benötigen eine Verwaltung über ihren Lebenszyklus. MX-Einträge zeigen Ziele für die E-Mail-Zustellung.",
+    "example": "Praxisbeispiel: Postfächer, Aliasse und gemeinsame Postfächer benötigen eine Verwaltung über ihren Lebenszyklus. MX-Einträge zeigen Ziele für die E-Mail-Zustellung.",
+    "lab": "Erstelle eine Postfach-Checkliste mit MFA und erkläre einen MX-Eintrag.",
+    "question": "Welcher DNS-Eintrag steuert die Mailzustellung?",
+    "correct": "MX",
+    "wrong": "Nur A"
+  },
+  {
+    "title": "BYOD und Endgeräterichtlinien",
+    "explain": "Private Geräte mit Zugriff auf Unternehmensressourcen benötigen Geräteanforderungen, Verschlüsselung, Updates, Datentrennung und transparente Datenschutzregeln.",
+    "example": "Praxisbeispiel: Private Geräte mit Zugriff auf Unternehmensressourcen benötigen Geräteanforderungen, Verschlüsselung, Updates, Datentrennung und transparente Datenschutzregeln.",
+    "lab": "Schreibe eine einseitige BYOD-Richtlinie für ein fiktives Unternehmen.",
+    "question": "Was bedeutet BYOD?",
+    "correct": "Das eigene Gerät mitbringen",
+    "wrong": "Eine alte Festplatte sichern"
+  },
+  {
+    "title": "VoIP und Websicherheit",
+    "explain": "VoIP-Qualität hängt von Latenz, Jitter und Paketverlust ab. HTTPS verwendet TLS zur Transportverschlüsselung, garantiert aber keine vertrauenswürdige Website.",
+    "example": "Praxisbeispiel: VoIP-Qualität hängt von Latenz, Jitter und Paketverlust ab. HTTPS verwendet TLS zur Transportverschlüsselung, garantiert aber keine vertrauenswürdige Website.",
+    "lab": "Miss die Latenz im eigenen Netzwerk und erkläre einen abgehackten Anruf.",
+    "question": "Was verschlechtert Sprachanrufe?",
+    "correct": "Jitter und Paketverlust",
+    "wrong": "Das Hintergrundbild"
+  },
+  {
+    "title": "Netzwerkmodelle",
+    "explain": "Das OSI-Modell ordnet Konzepte in Schichten. TCP/IP beschreibt die eingesetzte Internet-Protokollfamilie. Ethernet transportiert lokale Frames; IP leitet Pakete weiter.",
+    "example": "Praxisbeispiel: Das OSI-Modell ordnet Konzepte in Schichten. TCP/IP beschreibt die eingesetzte Internet-Protokollfamilie. Ethernet transportiert lokale Frames; IP leitet Pakete weiter.",
+    "lab": "Verfolge eine Browseranfrage durch DNS, TCP, TLS und HTTP.",
+    "question": "Was leitet Pakete über Netzwerkgrenzen hinweg?",
+    "correct": "IP",
+    "wrong": "HDMI"
+  },
+  {
+    "title": "Ethernet, Switches und VLANs",
+    "explain": "Switches lernen MAC-Adressen. VLANs trennen Broadcast-Domänen, benötigen für tragfähige Sicherheit aber zusätzlich Routing und Firewall-Regeln.",
+    "example": "Praxisbeispiel: Switches lernen MAC-Adressen. VLANs trennen Broadcast-Domänen, benötigen für tragfähige Sicherheit aber zusätzlich Routing und Firewall-Regeln.",
+    "lab": "Zeichne Büro- und Gäste-VLANs mit Router und Firewall.",
+    "question": "Welche Adresse lernt ein Switch?",
+    "correct": "MAC-Adresse",
+    "wrong": "E-Mail-Adresse"
+  },
+  {
+    "title": "IPv4 und CIDR",
+    "explain": "IPv4-Adressen sind 32 Bit lang. Ein /24-Präfix enthält 24 Netzwerkbits. Für 192.168.1.25/24 lautet das Netz 192.168.1.0.",
+    "example": "Praxisbeispiel: IPv4-Adressen sind 32 Bit lang. Ein /24-Präfix enthält 24 Netzwerkbits. Für 192.168.1.25/24 lautet das Netz 192.168.1.0.",
+    "lab": "Berechne Netzwerk- und Broadcast-Adresse für 192.168.10.0/26.",
+    "question": "Wie viele Adressen enthält ein /26-Netz insgesamt?",
+    "correct": "64",
+    "wrong": "26"
+  },
+  {
+    "title": "Subnetting üben",
+    "explain": "Ein /26-Netz hat sechs Hostbits, also 2⁶ = 64 Adressen. Ein übliches Subnetz reserviert Netzwerk- und Broadcast-Adresse; 62 bleiben nutzbar.",
+    "example": "Praxisbeispiel: Ein /26-Netz hat sechs Hostbits, also 2⁶ = 64 Adressen. Ein übliches Subnetz reserviert Netzwerk- und Broadcast-Adresse; 62 bleiben nutzbar.",
+    "lab": "Löse Übungen zu den Adressbereichen von /25, /26, /27 und /28.",
+    "question": "Wie viele nutzbare Hosts hat ein übliches /26-Netz?",
+    "correct": "62",
+    "wrong": "64"
+  },
+  {
+    "title": "IPv6",
+    "explain": "IPv6 verwendet 128-Bit-Adressen. ::1 ist die Loopback-Adresse; fe80::/10 bezeichnet Link-Local-Adressen. SLAAC und DHCPv6 können Adressinformationen bereitstellen.",
+    "example": "Praxisbeispiel: IPv6 verwendet 128-Bit-Adressen. ::1 ist die Loopback-Adresse; fe80::/10 bezeichnet Link-Local-Adressen. SLAAC und DHCPv6 können Adressinformationen bereitstellen.",
+    "lab": "Untersuche ipconfig oder ip -6 addr und bestimme die Geltungsbereiche der Adressen.",
+    "question": "Wie lautet die IPv6-Loopback-Adresse?",
+    "correct": "::1",
+    "wrong": "127.0.0.1"
+  },
+  {
+    "title": "DHCP",
+    "explain": "DHCP vergibt Netzwerkeinstellungen mit einer Lease. Der klassische IPv4-Ablauf lautet Discover, Offer, Request, Acknowledge.",
+    "example": "Praxisbeispiel: DHCP vergibt Netzwerkeinstellungen mit einer Lease. Der klassische IPv4-Ablauf lautet Discover, Offer, Request, Acknowledge.",
+    "lab": "Prüfe DHCP-Lease, Gateway und DNS mit ipconfig /all.",
+    "question": "Was stellt DHCP bereit?",
+    "correct": "Die IP-Konfiguration",
+    "wrong": "Datenträgerverschlüsselung"
+  },
+  {
+    "title": "DNS",
+    "explain": "DNS löst Namen mit A-, AAAA-, CNAME-, MX- und weiteren Einträgen auf. TTL beeinflusst Caching und die Wirksamkeit von Änderungen.",
+    "example": "Praxisbeispiel: DNS löst Namen mit A-, AAAA-, CNAME-, MX- und weiteren Einträgen auf. TTL beeinflusst Caching und die Wirksamkeit von Änderungen.",
+    "lab": "Untersuche öffentliche Einträge mit nslookup oder Resolve-DnsName.",
+    "question": "Welcher Eintrag ordnet einem Namen eine IPv4-Adresse zu?",
+    "correct": "A",
+    "wrong": "MX"
+  },
+  {
+    "title": "Routing und NAT",
+    "explain": "Router leiten Datenverkehr zwischen IP-Netzen weiter. NAT übersetzt Adressen und erlaubt oft mehreren privaten IPv4-Geräten, eine öffentliche Adresse zu teilen.",
+    "example": "Praxisbeispiel: Router leiten Datenverkehr zwischen IP-Netzen weiter. NAT übersetzt Adressen und erlaubt oft mehreren privaten IPv4-Geräten, eine öffentliche Adresse zu teilen.",
+    "lab": "Zeichne den Paketweg von einem Laptop zu einer öffentlichen Website.",
+    "question": "Was leitet zwischen IP-Netzen weiter?",
+    "correct": "Ein Router",
+    "wrong": "Eine Tastatur"
+  },
+  {
+    "title": "TCP, UDP und Ports",
+    "explain": "TCP bietet zuverlässige, geordnete Byteströme. UDP sendet Datagramme ohne eingebaute Zustellgarantie. Ports kennzeichnen Kommunikationsendpunkte.",
+    "example": "Praxisbeispiel: TCP bietet zuverlässige, geordnete Byteströme. UDP sendet Datagramme ohne eingebaute Zustellgarantie. Ports kennzeichnen Kommunikationsendpunkte.",
+    "lab": "Untersuche lokale Verbindungen mit Get-NetTCPConnection.",
+    "question": "Welches Transportprotokoll liefert zuverlässig und geordnet?",
+    "correct": "TCP",
+    "wrong": "UDP"
+  },
+  {
+    "title": "WLAN-Planung und Sicherheit",
+    "explain": "WLAN benötigt Kanalplanung, Abdeckung, Kapazität und WPA2/WPA3-Sicherheit. Eine versteckte SSID ist keine wirksame Verschlüsselung.",
+    "example": "Praxisbeispiel: WLAN benötigt Kanalplanung, Abdeckung, Kapazität und WPA2/WPA3-Sicherheit. Eine versteckte SSID ist keine wirksame Verschlüsselung.",
+    "lab": "Miss Signalstärke und Latenz im eigenen Heimnetz.",
+    "question": "Was schützt modernen WLAN-Datenverkehr?",
+    "correct": "WPA2/WPA3",
+    "wrong": "Allein eine versteckte SSID"
+  },
+  {
+    "title": "Firewalls und Portweiterleitung",
+    "explain": "Eine Firewall filtert Datenverkehr anhand von Regeln. Portweiterleitung macht Dienste über ein Gateway erreichbar und sollte begrenzt werden.",
+    "example": "Praxisbeispiel: Eine Firewall filtert Datenverkehr anhand von Regeln. Portweiterleitung macht Dienste über ein Gateway erreichbar und sollte begrenzt werden.",
+    "lab": "Entwirf für ein kleines Büro eingehende Firewall-Regeln nach dem Prinzip standardmäßig verweigern.",
+    "question": "Was ist die sicherere Voreinstellung für eingehende Verbindungen?",
+    "correct": "Verweigern, sofern nicht erforderlich",
+    "wrong": "Alles erlauben"
+  },
+  {
+    "title": "VPN und Fernzugriff",
+    "explain": "VPNs verschlüsseln Tunnel. Sie ersetzen keine Identitätsprüfung, MFA, Prüfung des Gerätezustands oder Autorisierung.",
+    "example": "Praxisbeispiel: VPNs verschlüsseln Tunnel. Sie ersetzen keine Identitätsprüfung, MFA, Prüfung des Gerätezustands oder Autorisierung.",
+    "lab": "Zeichne den Zugriff einer extern arbeitenden Person auf interne Dienste über ein genehmigtes VPN.",
+    "question": "Macht ein VPN einen kompromittierten Laptop sicher?",
+    "correct": "Nein",
+    "wrong": "Ja"
+  },
+  {
+    "title": "Netzwerkdiagnose",
+    "explain": "Prüfe schrittweise Verbindung, IP-Adresse, Gateway, DNS und Anwendung. Nutze ping, traceroute und nslookup nur auf autorisierten Systemen.",
+    "example": "Praxisbeispiel: Prüfe schrittweise Verbindung, IP-Adresse, Gateway, DNS und Anwendung. Nutze ping, traceroute und nslookup nur auf autorisierten Systemen.",
+    "lab": "Dokumentiere ipconfig, Gateway-Ping, DNS-Abfrage und Traceroute.",
+    "question": "IP-Zugriff funktioniert, Hostnamen nicht: Was prüfen?",
+    "correct": "DNS",
+    "wrong": "Das Hintergrundbild"
+  },
+  {
+    "title": "Netzwerksicherheit und Dokumentation",
+    "explain": "Pflege Inventar, Adressplan, Topologie, Änderungsprotokoll und Konfigurationssicherungen. Segmentiere sensible Systeme und aktualisiere Netzwerkgeräte.",
+    "example": "Praxisbeispiel: Pflege Inventar, Adressplan, Topologie, Änderungsprotokoll und Konfigurationssicherungen. Segmentiere sensible Systeme und aktualisiere Netzwerkgeräte.",
+    "lab": "Erstelle Topologie und Adressplan für ein fiktives Büro.",
+    "question": "Warum ein Netzwerk dokumentieren?",
+    "correct": "Sichere Wartung und Fehlersuche",
+    "wrong": "Um Überwachung zu vermeiden"
+  },
+  {
+    "title": "Windows-Serverrollen",
+    "explain": "Server bieten zentrale Dienste wie Identitäten, DNS, DHCP, Dateifreigaben und Anwendungen. Plane Abhängigkeiten und Wartung.",
+    "example": "Praxisbeispiel: Server bieten zentrale Dienste wie Identitäten, DNS, DHCP, Dateifreigaben und Anwendungen. Plane Abhängigkeiten und Wartung.",
+    "lab": "Entwirf eine Server-VM mit Hostname, statischer IP und dokumentierten Rollen.",
+    "question": "Was ist eine Serverrolle?",
+    "correct": "Ein Dienst für Clients",
+    "wrong": "Ein Kabel"
+  },
+  {
+    "title": "Active Directory: erweiterte Verwaltung",
+    "explain": "Delegation vergibt begrenzte Verwaltungsrechte. Plane OUs, Gruppen, Dienstkonten und privilegierten Zugriff sorgfältig.",
+    "example": "Praxisbeispiel: Delegation vergibt begrenzte Verwaltungsrechte. Plane OUs, Gruppen, Dienstkonten und privilegierten Zugriff sorgfältig.",
+    "lab": "Entwirf delegierte Rechte zum Zurücksetzen von Passwörtern für eine Helpdesk-Gruppe.",
+    "question": "Was bedeutet Delegation?",
+    "correct": "Begrenzte Verwaltungsrechte",
+    "wrong": "Ein geteiltes Administratorpasswort"
+  },
+  {
+    "title": "Server-DNS und DHCP",
+    "explain": "DNS und DHCP bilden die Grundlage von Domänennetzen. Clients müssen erforderliche Diensteinträge auflösen und passende Adressinformationen erhalten.",
+    "example": "Praxisbeispiel: DNS und DHCP bilden die Grundlage von Domänennetzen. Clients müssen erforderliche Diensteinträge auflösen und passende Adressinformationen erhalten.",
+    "lab": "Erstelle eine DNS-Testzone und einen DHCP-Bereich in einem isolierten Lab.",
+    "question": "Was hilft Clients, Domänendienste über Namen zu finden?",
+    "correct": "DNS",
+    "wrong": "HDMI"
+  },
+  {
+    "title": "Speicherpools, Kontingente und DFS",
+    "explain": "Speicherpools bündeln Kapazität, Kontingente begrenzen die Nutzung und DFS kann einen gemeinsamen Namensraum bereitstellen. Plane Verfügbarkeit und Wiederherstellung getrennt.",
+    "example": "Praxisbeispiel: Speicherpools bündeln Kapazität, Kontingente begrenzen die Nutzung und DFS kann einen gemeinsamen Namensraum bereitstellen. Plane Verfügbarkeit und Wiederherstellung getrennt.",
+    "lab": "Entwirf eine gemeinsame Speicherstruktur mit Kontingenten und Wiederherstellungsplan.",
+    "question": "Was begrenzt ein Kontingent?",
+    "correct": "Die Speichernutzung",
+    "wrong": "Die CPU-Frequenz"
+  },
+  {
+    "title": "Servervirtualisierung",
+    "explain": "Server-VMs benötigen CPU, RAM, Speicher, Netzwerk und Wachstumsspielraum. Überbelegung kann die Leistung beeinträchtigen.",
+    "example": "Praxisbeispiel: Server-VMs benötigen CPU, RAM, Speicher, Netzwerk und Wachstumsspielraum. Überbelegung kann die Leistung beeinträchtigen.",
+    "lab": "Dimensioniere einen Host für drei kleine Server-VMs mit Reserven.",
+    "question": "Was ist für die Kapazitätsplanung wichtig?",
+    "correct": "RAM, CPU, Speicher und Wachstum",
+    "wrong": "Nur VM-Namen"
+  },
+  {
+    "title": "Server absichern",
+    "explain": "Verringere die Angriffsfläche durch Updates, eingeschränkte Rechte, sichere Fernverwaltung, Protokollierung und das Entfernen unnötiger Dienste.",
+    "example": "Praxisbeispiel: Verringere die Angriffsfläche durch Updates, eingeschränkte Rechte, sichere Fernverwaltung, Protokollierung und das Entfernen unnötiger Dienste.",
+    "lab": "Erstelle eine Härtungs-Checkliste für eine entbehrliche Server-VM.",
+    "question": "Was bedeutet Härtung?",
+    "correct": "Die Angriffsfläche verringern",
+    "wrong": "Protokolle deaktivieren"
+  },
+  {
+    "title": "Überwachung und Vorfallsbehandlung",
+    "explain": "Überwache Verfügbarkeit, Kapazität und Protokolle. Alarme brauchen Schwellenwerte, Zuständigkeiten und dokumentierte Reaktionen. Bewahre bei Vorfällen Beweise auf.",
+    "example": "Praxisbeispiel: Überwache Verfügbarkeit, Kapazität und Protokolle. Alarme brauchen Schwellenwerte, Zuständigkeiten und dokumentierte Reaktionen. Bewahre bei Vorfällen Beweise auf.",
+    "lab": "Definiere fünf Messgrößen, Schwellenwerte und Eskalationsschritte.",
+    "question": "Was macht einen Alarm nützlich?",
+    "correct": "Klare Maßnahmen und Zuständigkeit",
+    "wrong": "Viele Benachrichtigungen"
+  },
+  {
+    "title": "Backup, Wiederherstellung, RPO und RTO",
+    "explain": "RPO beschreibt den tolerierbaren Datenverlust; RTO die angestrebte Wiederherstellungszeit. Schütze Sicherungen und teste die tatsächliche Wiederherstellung regelmäßig.",
+    "example": "Praxisbeispiel: RPO beschreibt den tolerierbaren Datenverlust; RTO die angestrebte Wiederherstellungszeit. Schütze Sicherungen und teste die tatsächliche Wiederherstellung regelmäßig.",
+    "lab": "Schreibe einen Sicherungsplan und stelle Beispieldateien in einem Lab wieder her.",
+    "question": "Was misst die RTO?",
+    "correct": "Die Wiederherstellungszeit",
+    "wrong": "Den tolerierbaren Datenverlust"
+  },
+  {
+    "title": "Images und Softwareverteilung",
+    "explain": "Standardisierte Verteilung verbessert die Einheitlichkeit. Teste Betriebssystem-Images, Treiber, Lizenzen, Anwendungen und Rückfallmöglichkeiten vor der Einführung.",
+    "example": "Praxisbeispiel: Standardisierte Verteilung verbessert die Einheitlichkeit. Teste Betriebssystem-Images, Treiber, Lizenzen, Anwendungen und Rückfallmöglichkeiten vor der Einführung.",
+    "lab": "Erstelle eine Checkliste zur Verteilung auf 20 fiktive PCs.",
+    "question": "Warum die Verteilung standardisieren?",
+    "correct": "Wiederholbarkeit",
+    "wrong": "Um Tests zu vermeiden"
+  },
+  {
+    "title": "Firewalls und Serversicherheit",
+    "explain": "Server-Firewalls sollen nur erforderlichen Datenverkehr zulassen. Untersuche Auffälligkeiten mit Protokollen und festgelegten Abwehrverfahren.",
+    "example": "Praxisbeispiel: Server-Firewalls sollen nur erforderlichen Datenverkehr zulassen. Untersuche Auffälligkeiten mit Protokollen und festgelegten Abwehrverfahren.",
+    "lab": "Schreibe eine Firewall-Regelmatrix und einen fiktiven Leitfaden zur ersten Vorfallsbewertung.",
+    "question": "Was soll mit Vorfallsprotokollen geschehen?",
+    "correct": "Aufbewahren und dokumentieren",
+    "wrong": "Sofort löschen"
+  },
+  {
+    "title": "Migration und Projektplanung",
+    "explain": "Infrastrukturmigration braucht Bestandsaufnahme, Abhängigkeiten, Sicherungen, Kommunikation, Prüfung und eine Rückfallmöglichkeit.",
+    "example": "Praxisbeispiel: Infrastrukturmigration braucht Bestandsaufnahme, Abhängigkeiten, Sicherungen, Kommunikation, Prüfung und eine Rückfallmöglichkeit.",
+    "lab": "Plane eine fiktive Dateiserver-Migration mit Wartungsfenster.",
+    "question": "Was muss ein Migrationsplan enthalten?",
+    "correct": "Prüfung und Rückfallmöglichkeit",
+    "wrong": "Nur ein Datum"
+  },
+  {
+    "title": "Abschlussprojekt: Infrastruktur",
+    "explain": "Verbinde Serverrollen, Identitäten, Dateifreigaben, VLANs, sicheren Fernzugriff, Überwachung, Sicherungstests und Dokumentation in einem Entwurf.",
+    "example": "Praxisbeispiel: Verbinde Serverrollen, Identitäten, Dateifreigaben, VLANs, sicheren Fernzugriff, Überwachung, Sicherungstests und Dokumentation in einem Entwurf.",
+    "lab": "Entwirf ein fiktives Büro für 20 Personen mit Netzwerkplan, Adressierung, Rechten, RPO/RTO und Abnahmetests.",
+    "question": "Was zeigt, dass ein System wartbar ist?",
+    "correct": "Getestete Dienste und Dokumentation",
+    "wrong": "Undokumentierte Änderungen"
+  }
+]

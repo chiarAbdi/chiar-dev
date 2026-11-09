@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local media rendering and browser verification scratch files
+/.local/
+
+# Reference copies and private source notes
+/learnblog-academy-v5-final/
+/portfolio-v2-inspection.txt
+/docs/about-content.md

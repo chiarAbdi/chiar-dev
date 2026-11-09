@@ -1,0 +1,46 @@
+{
+  "title": "Was ist ICT?",
+  "description": "Verfolge eine Nachricht durch Eingabe, Verarbeitung, Arbeitsspeicher, Datenspeicher und Kommunikation.",
+  "scenes": [
+    {
+      "id": "definition",
+      "title": "Drei Buchstaben. Eine vernetzte Welt.",
+      "narration": "ICT steht für Informations- und Kommunikationstechnologie. Damit verarbeiten und teilen wir Informationen. Verfolgen wir eine Nachricht."
+    },
+    {
+      "id": "input",
+      "title": "Zuerst kommt die Eingabe.",
+      "narration": "Du tippst Hallo auf einer Tastatur. Diese Tastendrücke sind Eingaben: Informationen, die in den Computer gelangen. Auch Maus, Mikrofon und Touchscreen liefern Eingaben."
+    },
+    {
+      "id": "cpu",
+      "title": "Die CPU folgt Anweisungen.",
+      "narration": "Die CPU führt die Anweisungen der Anwendung aus. Sie verarbeitet deine Eingabe, damit die Buchstaben auf dem Bildschirm erscheinen. Sie erledigt die Rechenarbeit."
+    },
+    {
+      "id": "ram",
+      "title": "RAM ist der Arbeitsbereich.",
+      "narration": "Während eine Anwendung läuft, hält RAM die aktuell benötigten Daten. RAM ist flüchtig. Wird der Strom abgeschaltet, geht sein Inhalt verloren."
+    },
+    {
+      "id": "storage",
+      "title": "Datenspeicher behalten gespeicherte Dateien.",
+      "narration": "Wenn du eine Datei speicherst, landet sie auf einem dauerhaften Datenträger, zum Beispiel einer SSD. Anders als RAM behält er gespeicherte Dateien auch ohne Strom."
+    },
+    {
+      "id": "network",
+      "title": "Kommunikation verbindet Geräte.",
+      "narration": "Drücke auf Senden. Ein Netzwerk transportiert deine Nachricht als Daten zwischen Geräten. Auf dem Bildschirm der anderen Person wird die Nachricht zur Ausgabe: einer sichtbaren Information."
+    },
+    {
+      "id": "recap",
+      "title": "Die Teile zusammenfügen.",
+      "narration": "Eingaben bringen Informationen hinein. Die CPU verarbeitet sie. RAM hält Arbeitsdaten. Datenspeicher behalten gespeicherte Dateien. Netzwerke lassen Geräte Informationen teilen. Das ist ICT."
+    },
+    {
+      "id": "check",
+      "title": "Du bist dran: RAM oder SSD?",
+      "narration": "Welche Komponente hält Daten, die ein Programm gerade verwendet? RAM. Öffne anschließend den Task-Manager und beobachte CPU, Arbeitsspeicher, Datenträger und Netzwerk."
+    }
+  ]
+}

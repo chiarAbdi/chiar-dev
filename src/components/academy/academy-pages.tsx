@@ -11,7 +11,6 @@ import {
   Clock3,
   Layers,
   RotateCcw,
-  Sigma,
   Sparkles,
 } from "lucide-react";
 import { questions, t } from "@/lib/academy";
@@ -66,232 +65,11 @@ function PageLink({
   );
 }
 
-export function BlogPage() {
-  return (
-    <AcademyShell>
-      <Heading
-        eyebrow={t("My learning journal", "Mein Lernjournal")}
-        title={t("Learn. Understand. Teach.", "Lernen. Verstehen. Erklären.")}
-        description={t(
-          "Welcome to my public computer science preparation journey. Here I turn challenging ideas into approachable lessons, worked examples, and interactive practice.",
-          "Willkommen auf meinem öffentlichen Weg zur Informatikvorbereitung. Hier verwandle ich schwierige Konzepte in verständliche Lektionen, Beispiele und interaktive Übungen.",
-        )}
-      />
-      <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr]">
-        <div className="surface-card relative overflow-hidden p-8 sm:p-10">
-          <div className="pointer-events-none absolute -right-16 -top-20 h-60 w-60 rounded-full bg-indigo-500/15 blur-3xl" />
-          <div className="relative">
-            <Pill>
-              <Local
-                text={t(
-                  "First course · Available now",
-                  "Erster Kurs · Jetzt verfügbar",
-                )}
-              />
-            </Pill>
-            <Sigma className="mt-8 text-[var(--accent)]" size={36} />
-            <h2 className="mt-5 text-3xl font-semibold">
-              <Local text={t("Discrete Mathematics", "Diskrete Mathematik")} />
-            </h2>
-            <p className="mt-4 max-w-xl leading-8 text-[var(--muted)]">
-              <Local
-                text={t(
-                  "Start with logic and truth tables, then work toward sets, functions, proofs, and graphs.",
-                  "Starte mit Logik und Wahrheitstabellen und lerne danach Mengen, Funktionen, Beweise und Graphen.",
-                )}
-              />
-            </p>
-            <div className="mt-8">
-              <PageLink href="/learn/discrete-math">
-                <Local text={t("Explore the course", "Kurs entdecken")} />
-              </PageLink>
-            </div>
-          </div>
-        </div>
-        <div className="surface-card p-8">
-          <BookOpen size={28} className="text-[var(--accent)]" />
-          <h3 className="mt-5 text-xl font-semibold">
-            <Local
-              text={t("What you'll find here", "Was dich hier erwartet")}
-            />
-          </h3>
-          <div className="mt-6 space-y-4 text-sm leading-7 text-[var(--muted)]">
-            {[
-              t(
-                "Beginner-friendly explanations",
-                "Einsteigerfreundliche Erklärungen",
-              ),
-              t("Interactive truth tables", "Interaktive Wahrheitstabellen"),
-              t(
-                "Practice questions with solutions",
-                "Übungsfragen mit Lösungen",
-              ),
-              t(
-                "English and German lessons",
-                "Lektionen auf Englisch und Deutsch",
-              ),
-            ].map((item, i) => (
-              <div key={i} className="flex gap-3">
-                <CheckCircle2
-                  size={18}
-                  className="mt-1 shrink-0 text-[var(--accent)]"
-                />
-                <Local text={item} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="mt-12">
-        <h2 className="mb-5 text-2xl font-semibold">
-          <Local text={t("Start learning", "Jetzt lernen")} />
-        </h2>
-        <Link
-          href="/learn/discrete-math/logic"
-          className="surface-card flex flex-wrap items-center justify-between gap-4 p-6 transition hover:-translate-y-0.5"
-        >
-          <div>
-            <p className="font-mono text-xs text-[var(--accent)]">LESSON 01</p>
-            <h3 className="mt-2 text-xl font-semibold">
-              <Local
-                text={t(
-                  "Propositional Logic & Truth Tables",
-                  "Aussagenlogik und Wahrheitstabellen",
-                )}
-              />
-            </h3>
-            <p className="mt-2 text-sm text-[var(--muted)]">
-              <Local
-                text={t(
-                  "Learn the fundamentals, then take a five-question quiz.",
-                  "Lerne die Grundlagen und absolviere anschließend ein Quiz mit fünf Fragen.",
-                )}
-              />
-            </p>
-          </div>
-          <ArrowRight className="text-[var(--accent)]" />
-        </Link>
-      </div>
-    </AcademyShell>
-  );
-}
-
-export function CatalogPage() {
-  const courses = [
-    {
-      number: "01",
-      icon: BookOpen,
-      count: 18,
-      href: "/learn/math-from-zero",
-      title: t("Math from Zero", "Mathe von Null"),
-      description: t(
-        "Start from the very beginning: numbers, arithmetic, fractions, percentages, algebra, equations, graphs and functions. No previous math experience needed.",
-        "Beginne ganz von vorne: Zahlen, Grundrechenarten, Brüche, Prozente, Algebra, Gleichungen, Graphen und Funktionen. Keine Vorkenntnisse nötig.",
-      ),
-      tag: t(
-        "Start here · Complete beginner",
-        "Hier starten · Ohne Vorkenntnisse",
-      ),
-    },
-    {
-      number: "02",
-      icon: Sigma,
-      count: 39,
-      href: "/learn/discrete-math/foundation",
-      title: t("Discrete Mathematics", "Diskrete Mathematik"),
-      description: t(
-        "Build computer-science foundations through logic, sets, relations, functions, proofs, combinatorics, number theory and graph theory.",
-        "Erarbeite die Grundlagen der Informatik: Logik, Mengen, Relationen, Funktionen, Beweise, Kombinatorik, Zahlentheorie und Graphentheorie.",
-      ),
-      tag: t("Computer science preparation", "Informatikvorbereitung"),
-    },
-  ];
-  return (
-    <AcademyShell>
-      <Heading
-        eyebrow={t("Course catalog", "Kursübersicht")}
-        title={t("Choose your learning path", "Wähle deinen Lernweg")}
-        description={t(
-          "New to mathematics? Start with Math from Zero. Already comfortable with algebra? Explore Discrete Mathematics. Both courses are available in English and German.",
-          "Neu in Mathematik? Beginne mit Mathe von Null. Kennst du bereits Algebra? Entdecke Diskrete Mathematik. Beide Kurse sind auf Englisch und Deutsch verfügbar.",
-        )}
-      />
-      <div className="grid gap-6 md:grid-cols-2">
-        {courses.map((course) => (
-          <div
-            key={course.number}
-            className="surface-card flex h-full flex-col p-7 sm:p-9"
-          >
-            <div className="flex items-center justify-between gap-3">
-              <Pill>
-                <Local text={course.tag} />
-              </Pill>
-              <course.icon
-                size={28}
-                className="shrink-0 text-[var(--accent)]"
-              />
-            </div>
-            <p className="mt-7 font-mono text-xs uppercase tracking-widest text-[var(--accent)]">
-              <Local text={t("Course", "Kurs")} /> {course.number}
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight">
-              <Local text={course.title} />
-            </h2>
-            <p className="mt-4 flex-1 text-sm leading-8 text-[var(--muted)]">
-              <Local text={course.description} />
-            </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              <Pill>
-                <BookOpen size={14} className="mr-2" />
-                {course.count} <Local text={t("lessons", "Lektionen")} />
-              </Pill>
-              <Pill>
-                <Local text={t("English + German", "Englisch + Deutsch")} />
-              </Pill>
-            </div>
-            <div className="mt-8">
-              <PageLink href={course.href}>
-                <Local text={t("Explore course", "Kurs entdecken")} />
-              </PageLink>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="surface-card mt-7 p-6 sm:p-8">
-        <h2 className="text-xl font-semibold">
-          <Local
-            text={t(
-              "Already learning Discrete Mathematics?",
-              "Du lernst bereits Diskrete Mathematik?",
-            )}
-          />
-        </h2>
-        <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
-          <Local
-            text={t(
-              "You can still access the original interactive truth-table lesson and the introductory topic pages.",
-              "Du kannst weiterhin die ursprüngliche interaktive Wahrheitstabelle und die Einführungsthemen öffnen.",
-            )}
-          />
-        </p>
-        <Link
-          href="/learn/discrete-math"
-          className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent)]"
-        >
-          <Local
-            text={t(
-              "Browse introductory lessons",
-              "Einführungslektionen ansehen",
-            )}
-          />
-          <ArrowRight size={16} />
-        </Link>
-      </div>
-    </AcademyShell>
-  );
-}
-
-export function CoursePage() {
+export function CoursePage({
+  guidedLessonCount,
+}: {
+  guidedLessonCount: number;
+}) {
   return (
     <AcademyShell>
       <Link
@@ -356,8 +134,8 @@ export function CoursePage() {
         <h2 className="text-xl font-semibold">
           <Local
             text={t(
-              "New: 39-lesson guided course",
-              "Neu: Geführter Kurs mit 39 Lektionen",
+              `Guided course · ${guidedLessonCount} lessons`,
+              `Geführter Kurs · ${guidedLessonCount} Lektionen`,
             )}
           />
         </h2>
@@ -374,7 +152,10 @@ export function CoursePage() {
           className="mt-4 inline-flex items-center gap-2 font-semibold text-[var(--accent)]"
         >
           <Local
-            text={t("Browse all 39 lessons", "Alle 39 Lektionen ansehen")}
+            text={t(
+              `Browse all ${guidedLessonCount} lessons`,
+              `Alle ${guidedLessonCount} Lektionen ansehen`,
+            )}
           />
           <ArrowRight size={16} />
         </Link>

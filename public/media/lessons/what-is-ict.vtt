@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.344
+I C T means information and communication technology.
+
+2
+00:00:04.524 --> 00:00:08.220
+It is the technology we use to work with information and share it.
+
+3
+00:00:08.400 --> 00:00:09.804
+Let's follow a message.
+
+4
+00:00:11.017 --> 00:00:12.649
+You type hello on a keyboard.
+
+5
+00:00:12.829 --> 00:00:16.560
+Those key presses are input: information entering the computer.
+
+6
+00:00:16.740 --> 00:00:20.455
+A mouse, microphone, or touchscreen can provide input too.
+
+7
+00:00:21.650 --> 00:00:24.343
+The C P U runs the app's instructions.
+
+8
+00:00:24.523 --> 00:00:27.746
+It processes your input so the letters appear on screen.
+
+9
+00:00:27.926 --> 00:00:29.627
+Think of it as doing the work.
+
+10
+00:00:30.817 --> 00:00:34.811
+While the app is running, RAM holds data it is using right now.
+
+11
+00:00:34.991 --> 00:00:36.574
+RAM is temporary.
+
+12
+00:00:36.754 --> 00:00:39.238
+Turn the power off, and its contents are lost.
+
+13
+00:00:40.450 --> 00:00:44.611
+Save a file, and it goes to persistent storage, such as an S S D.
+
+14
+00:00:44.791 --> 00:00:48.447
+Unlike RAM, saved files remain when the power is off.
+
+15
+00:00:49.650 --> 00:00:50.500
+Press send.
+
+16
+00:00:50.680 --> 00:00:54.127
+A network carries your message as data between devices.
+
+17
+00:00:54.307 --> 00:00:59.143
+On the other person's screen, the message becomes output: information they can see.
+
+18
+00:01:00.350 --> 00:01:02.154
+Input brings information in.
+
+19
+00:01:02.334 --> 00:01:04.092
+The C P U processes it.
+
+20
+00:01:04.272 --> 00:01:06.133
+RAM holds working data.
+
+21
+00:01:06.313 --> 00:01:08.016
+Storage keeps saved files.
+
+22
+00:01:08.196 --> 00:01:10.566
+Networks let devices share information.
+
+23
+00:01:10.746 --> 00:01:11.914
+That's I C T.
+
+24
+00:01:13.117 --> 00:01:16.405
+Quick check: which holds data a program is using right now?
+
+25
+00:01:16.585 --> 00:01:17.228
+RAM.
+
+26
+00:01:17.408 --> 00:01:22.939
+Next, open Task Manager and watch C P U, memory, disk, and network activity.

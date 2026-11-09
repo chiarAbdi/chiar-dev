@@ -13,6 +13,7 @@ import {
 import curriculum from "@/lib/academy-curriculum.json";
 import { AcademyShell, Local, useAcademyLanguage } from "./academy-shell";
 import { t } from "@/lib/academy";
+import { useLearningProgress } from "@/lib/use-learning-progress";
 
 type Course = "zero" | "discrete";
 const data = curriculum;
@@ -22,6 +23,7 @@ const labels = {
 };
 
 export function AcademyCourseCatalog({ course }: { course: Course }) {
+  const { language } = useAcademyLanguage();
   const lessons = data.filter((x) => x.course === course);
   const [search, setSearch] = useState("");
   const visible = lessons.filter((x) =>
@@ -83,7 +85,11 @@ export function AcademyCourseCatalog({ course }: { course: Course }) {
           id="academy-search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Logic, proofs, graphs, algebra…"
+          placeholder={
+            language === "de"
+              ? "Logik, Beweise, Graphen, Algebra…"
+              : "Logic, proofs, graphs, algebra…"
+          }
           className="w-full rounded-xl border border-[var(--border)] bg-transparent px-4 py-3 text-sm outline-none focus:border-[var(--accent)]"
         />
         <p className="mt-2 text-xs text-[var(--muted)]">
@@ -156,6 +162,7 @@ function FoundationLessonContent({
   slug: string;
 }) {
   const { language } = useAcademyLanguage();
+  const { completeLesson } = useLearningProgress();
   const lessons = data.filter((x) => x.course === course);
   const index = lessons.findIndex((x) => x.slug === slug);
   const lesson = lessons[index];
@@ -404,8 +411,8 @@ function FoundationLessonContent({
             <p className="mt-3 text-sm leading-7 text-[var(--muted)]">
               <Local
                 text={t(
-                  "Three lesson-specific comprehension checks followed by five cumulative review questions. Answer explanations appear immediately.",
-                  "Drei Verständnisfragen zur Lektion und fünf wiederholende Fragen aus dem Kurs. Erklärungen erscheinen sofort.",
+                  "Eight questions combine lesson checks with cumulative review. Answer explanations appear immediately.",
+                  "Acht Fragen verbinden Verständnischecks mit wiederholenden Kursfragen. Erklärungen erscheinen sofort.",
                 )}
               />
             </p>
@@ -500,11 +507,14 @@ function FoundationLessonContent({
                   <button
                     type="button"
                     disabled={selected === undefined}
-                    onClick={() =>
-                      current === lesson.questions.length - 1
-                        ? setComplete(true)
-                        : setCurrent((x) => x + 1)
-                    }
+                    onClick={() => {
+                      if (current === lesson.questions.length - 1) {
+                        completeLesson(`${course}:${slug}`);
+                        setComplete(true);
+                      } else {
+                        setCurrent((x) => x + 1);
+                      }
+                    }}
                     className="rounded-lg bg-[var(--accent)] px-5 py-2 text-sm font-semibold text-[#0b1020] disabled:opacity-40"
                   >
                     <Local

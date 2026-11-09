@@ -1,0 +1,46 @@
+{
+  "title": "What is ICT?",
+  "description": "Follow a message through input, processing, memory, storage and communication.",
+  "scenes": [
+    {
+      "id": "definition",
+      "title": "Three letters. One connected world.",
+      "narration": "I C T means information and communication technology. It is the technology we use to work with information and share it. Let's follow a message."
+    },
+    {
+      "id": "input",
+      "title": "First, give the computer input.",
+      "narration": "You type hello on a keyboard. Those key presses are input: information entering the computer. A mouse, microphone, or touchscreen can provide input too."
+    },
+    {
+      "id": "cpu",
+      "title": "The CPU follows instructions.",
+      "narration": "The C P U runs the app's instructions. It processes your input so the letters appear on screen. Think of it as doing the work."
+    },
+    {
+      "id": "ram",
+      "title": "RAM is the working space.",
+      "narration": "While the app is running, RAM holds data it is using right now. RAM is temporary. Turn the power off, and its contents are lost."
+    },
+    {
+      "id": "storage",
+      "title": "Storage keeps saved files.",
+      "narration": "Save a file, and it goes to persistent storage, such as an S S D. Unlike RAM, saved files remain when the power is off."
+    },
+    {
+      "id": "network",
+      "title": "Communication connects devices.",
+      "narration": "Press send. A network carries your message as data between devices. On the other person's screen, the message becomes output: information they can see."
+    },
+    {
+      "id": "recap",
+      "title": "Put the pieces together.",
+      "narration": "Input brings information in. The C P U processes it. RAM holds working data. Storage keeps saved files. Networks let devices share information. That's I C T."
+    },
+    {
+      "id": "check",
+      "title": "Your turn: RAM or SSD?",
+      "narration": "Quick check: which holds data a program is using right now? RAM. Next, open Task Manager and watch C P U, memory, disk, and network activity."
+    }
+  ]
+}
